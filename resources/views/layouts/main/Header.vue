@@ -2,12 +2,12 @@
     <div class="layout--main-header" :style="{left:menuTotalSpace+'px',height:navbar.height+'px'}">
         <div v-if="menu.fullSearchBar && ShowFullSearch" class="w100 flx">
             <div class="flx-auto"><CcMainsearch v-model="select" label="Search" /></div>
-            <div class="center pointer" style="padding:0px 10px" @click="ShowFullSearch = !ShowFullSearch"><img src="/icons/close.svg" style="width:20px" /></div>
+            <div class="center pointer" style="padding:0px 10px" @click="ShowFullSearch = !ShowFullSearch"></div>
         </div>
         <div class="flx w100" v-if="!ShowFullSearch">
             <div class="flx-auto hide flx-md">
-                <div class="center pointer" @click="toggleMenu()"><img src="/icons/list.svg" style="width:30px" /></div>
-                <div class="center pointer" style="padding-left:20px" @click="ShowFullSearch = !ShowFullSearch"><img src="/icons/f-search.svg" style="width:25px" /></div>
+                <div class="center pointer" @click="toggleMenu()"></div>
+                <div class="center pointer" style="padding-left:20px" @click="ShowFullSearch = !ShowFullSearch"></div>
             </div>
             <div style="flex:3" class="hide-md">
                 <CcMainsearch v-model="select" label="Search" />

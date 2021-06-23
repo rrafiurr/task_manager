@@ -120,7 +120,7 @@
                           <div  class="tsm-employee-list-image"><img :src="item.avatar_url" style="width:40px" /></div>
                           <div class="tsm-employee-list-text">{{item.login}}</div>
                           <div class="tsm-employee-list-delete">
-                              <img src="/icons/close.svg" style="width:10px" />
+                              
                           </div>
                       </div>
                       <div v-if="error_list.assignedUser" class="invalid-feedback text-danger">

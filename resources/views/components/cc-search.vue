@@ -4,7 +4,7 @@
             <div :style="{width:'30px'}"></div>
             <div style="flex:auto"><input class="cc-search" type="text" @focus="handleFocus" @blur="handleBlur" :placeholder="props.label" :value="props.modelValue" v-on:input="updateValue($event.target.value)"/></div>
             <div class="cc-search-icon-container">
-                <img src="/icons/loupe.svg" alt="*">
+                <!-- <img src="/icons/loupe.svg" alt="*"> -->
             </div>
         </div>
         <div class="cc-select-options-container">

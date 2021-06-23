@@ -3,7 +3,7 @@
     <div class="layout--main-menubar" v-if="menu.status == true" :style="{right:floatingShadow == true ? 0 : 'auto'}">
         <div class="layout--main-menu-icon-container"  :style="{width:menu.minifyMenuWidth+'px', height:'100vh'}" >
             <div>
-                <img src="/logo.png" style="width:100%" />
+                <!-- <img src="logo.png" style="width:100%" /> -->
             </div>
             <div class="menu-icon-container">
                 <div class="menu-icon" v-for="(item, index) in menuData" :key="index" :style="{backgroundColor:selectedMenu == item.name ? '#FFFFFF' : ''}" @click="menuSelected(item.name,index)">

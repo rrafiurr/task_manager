@@ -3,7 +3,7 @@
         <div :style="{width:'35px'}"></div>
         <div style="flex:auto"><input class="cc-main-serach" type="text" :placeholder="props.label" :value="props.modelValue" v-on:input="updateValue($event.target.value)"/></div>
         <div class="cc-main-serach-icon-container">
-            <img src="/icons/search.svg" alt="*">
+            <!-- <img src="/icons/search.svg" alt="*"> -->
         </div>
     </div>
 </template>
