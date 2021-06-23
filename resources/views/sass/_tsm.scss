@@ -1,0 +1,73 @@
+.tsm{
+    padding: 30px;
+    min-width: 360px;
+    &-name{
+        font-size:20px;
+        font-weight:bold;
+        padding-bottom:20px;
+    }
+    &-button{
+        display:flex;
+
+        &-spacer{
+            flex:auto;
+        }
+
+        &-container{
+            
+        }
+        &-name{
+            font-size:16px;
+            font-weight:bold;
+            padding: 20px 0px 10px 0px;
+            cursor: pointer;
+        }
+        &-marker-container{
+            padding:8%;
+            width:100%;
+        }
+        &-marker{
+            height:3px;
+        }
+    }
+    &-title{
+
+    }
+    &-description{
+        padding-top:10px
+    }
+    &-project-type{
+        padding-top:10px
+    }
+    &-employee-search{
+        padding-top:15px;
+    }
+    &-employee-list{
+        min-height:200px;
+        padding-top: 15px ;
+    }
+    &-employee-list-item{
+        display: flex;
+        padding: 8px 0px;
+    }
+    &-employee-list-image{
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    &-employee-list-text{
+        display: flex;
+        align-items: center;
+        padding:0px 15px;
+        flex:auto;
+        font-size:14px;
+        color: #4d4d64;
+    }
+    &-employee-list-delete{
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    &-save-button{
+        padding-top:30px
+    }
+}

@@ -1,0 +1,141 @@
+$placeHolderColor:#A0A0AC;
+$placeHolderFontSize:13px;
+
+@font-face {
+    src: url(/font/main-font.ttf);
+    font-family: 'poppins';
+    font-stretch:ultra-expanded;
+}
+
+* {padding:0rem; margin:0rem; box-sizing: border-box; vertical-align: top;}
+*,*:before,*:after {box-sizing: border-box;margin: 0rem;}
+a {text-decoration: none;}
+html {
+    font-family: 'poppins', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.875rem;
+    word-spacing: 0.0625rem; 
+    letter-spacing:0.04rem;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+}
+::-webkit-input-placeholder { color: $placeHolderColor; font-size:$placeHolderFontSize; opacity: 1; -webkit-transition: opacity .2s; transition: opacity .2s; } /* Chrome <=56, Safari < 10 */
+:-moz-placeholder { color: $placeHolderColor; font-size:$placeHolderFontSize; opacity: 1; -moz-transition: opacity .2s; transition: opacity .2s; } /* FF 4-18 */
+::-moz-placeholder { color: $placeHolderColor; font-size:$placeHolderFontSize; opacity: 1; -moz-transition: opacity .2s; transition: opacity .2s; } /* FF 19-51 */
+:-ms-input-placeholder { color: $placeHolderColor; font-size:$placeHolderFontSize; opacity: 1; -ms-transition: opacity .2s; transition: opacity .2s; } /* IE 10+ */
+::placeholder { color: $placeHolderColor; opacity: 1; transition: opacity .2s; } /* Modern Browsers */
+*:focus::-webkit-input-placeholder { opacity: 0; } /* Chrome <=56, Safari < 10 */
+*:focus:-moz-placeholder { opacity: 0; } /* FF 4-18 */
+*:focus::-moz-placeholder { opacity: 0; } /* FF 19-50 */
+*:focus:-ms-input-placeholder { opacity: 0; } /* IE 10+ */
+*:focus::placeholder { opacity: 0; } /* Modern Browsers */
+
+
+
+$breakPoint:(
+    'xl': 1200,
+    'lg': 1000,
+    'md' : 700,
+    'sm' : 500
+);
+
+
+@each $size, $value in $breakPoint{
+
+
+
+}
+
+@mixin base($name){
+    .shed#{$name}{box-shadow:0px 0px 5px 0px rgb(0,0,0,0.2)}
+    .flow-hide#{$name}{overflow:hidden;}
+    .pointer#{$name}{cursor: pointer;}
+
+    //Font
+    .f-8#{$name}{font-size:8px}
+    .f-9#{$name}{font-size:9px}
+    .f-10#{$name}{font-size:10px}
+    .f-11#{$name}{font-size:11px}
+    .f-12#{$name}{font-size:12px}
+    .f-13#{$name}{font-size:13px}
+    .f-14#{$name}{font-size:14px}
+    .f-15#{$name}{font-size:15px}
+    .f-16#{$name}{font-size:16px}
+    .f-17#{$name}{font-size:17px}
+    .f-18#{$name}{font-size:18px}
+    .f-19#{$name}{font-size:19px}
+    .f-20#{$name}{font-size:20px}
+
+    //Text
+    .txt-center#{$name}{text-align: center;}
+    .txt-left#{$name}{text-align: left;}
+    .txt-right#{$name}{text-align: right;}
+    .f-bold#{$name}{font-weight: bold;}
+    .line-txt#{$name}{ text-overflow: ellipsis; overflow:hidden; white-space: nowrap; }
+    .line-txt-wrap#{$name}{ text-overflow: ellipsis; overflow:hidden;}
+
+    //Flex box
+    .flx#{$name}{display:flex;}
+    .hide#{$name}{display:none;}
+    .block#{$name}{display:block;}
+    .flx-col#{$name}{flex-flow: column;}
+    .flx-auto#{$name}{flex:1}
+    .flx-1#{$name}{flex:auto}
+    .flx-2#{$name}{flex:2}
+    .flx-3#{$name}{flex:3}
+    .flx-4#{$name}{flex:4}
+    .flx-5#{$name}{flex:5}
+    .flx-6#{$name}{flex:6}
+    .wrp#{$name}{display:flex; box-sizing:border-box; flex-wrap:wrap}
+    .wrp-1#{$name}{flex-basis:8.333333333%; max-width:8.333333333%; flex-grow: 0; box-sizing:border-box}
+    .wrp-2#{$name}{flex-basis:16.666666666%; max-width:16.666666666%; flex-grow: 0; box-sizing:border-box}
+    .wrp-3#{$name}{flex-basis:24.999999999%; max-width:24.999999999%; flex-grow: 0; box-sizing:border-box}
+    .wrp-4#{$name}{flex-basis:33.333333332%; max-width:33.333333332%; flex-grow: 0; box-sizing:border-box}
+    .wrp-5#{$name}{flex-basis:41.666666665%; max-width:41.666666665%; flex-grow: 0; box-sizing:border-box}
+    .wrp-6#{$name}{flex-basis:49.999999998%; max-width:49.999999998%; flex-grow: 0; box-sizing:border-box}
+    .wrp-7#{$name}{flex-basis:58.333333331%; max-width:58.333333331%; flex-grow: 0; box-sizing:border-box}
+    .wrp-8#{$name}{flex-basis:66.666666664%; max-width:66.666666664%; flex-grow: 0; box-sizing:border-box}
+    .wrp-9#{$name}{flex-basis:74.999999997%; max-width:74.999999997%; flex-grow: 0; box-sizing:border-box}
+    .wrp-10#{$name}{flex-basis:83.33333333%; max-width:83.33333333%; flex-grow: 0; box-sizing:border-box}
+    .wrp-11#{$name}{flex-basis:91.666666663%; max-width:91.666666663%; flex-grow: 0; box-sizing:border-box}
+    .wrp-12#{$name}{flex-basis:99.999999996%; max-width:99.999999996%; flex-grow: 0; box-sizing:border-box}
+
+    //Align 
+    .center#{$name}{display: flex; justify-content: center; align-items: center;}
+    .h-center#{$name}{display: flex; align-items: center;}
+    .v-center#{$name}{display: flex; justify-content: center;}
+    //Height/Width
+    @for $i from 1 through 10 {
+        .w#{10*$i}#{$name}{width:10% * $i}
+    }
+    
+    .w100#{$name}{width:100%}
+
+}
+
+
+$breakPoint:(
+    '-xl' : 1200px,
+    '-lg' : 1000px,
+    '-md' : 700px,
+    '-sm' : 500px,
+);
+@include base('');
+
+@each $name, $size in $breakPoint {
+    @media (max-width : $size){
+        @include base($name);
+    }
+}
+
+
+
+
+
+
+
+
+
+
