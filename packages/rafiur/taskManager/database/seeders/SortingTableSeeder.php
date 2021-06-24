@@ -21,15 +21,15 @@ class SortingTableSeeder extends Seeder
                 DB::table('sortings')->insert([
     
                     [
-                        'id' => '1',
+                        'id' => 1,
                         'sorting' => '[]'
                     ],
                     [
-                        'id' => '2',
+                        'id' => 2,
                         'sorting' => '[]'
                     ],
                     [
-                        'id' => '3',
+                        'id' => 3,
                         'sorting' => '[]'
                     ]
     
