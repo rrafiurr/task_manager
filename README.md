@@ -3,6 +3,6 @@
 <h3>--> then run following coomand for sortings table seed</h3>
 
 <p>
- php artisan vendor:publish --tag=sorting-seeder
+ php artisan vendor:publish --tag=sorting-seeder<br>
  php artisan db:seed --class=SortingTableSeeder
 </p>    
