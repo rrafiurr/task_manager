@@ -186,18 +186,22 @@ class TaskController extends Controller
     {
         $sortings=Sorting::get();
         foreach($sortings as $sorting)
-        {
+        {   
             $array=json_decode($sorting->sorting);
-            
+            // echo "Main array<pre>"; print_r($array);
             
             $key=array_search($id, $array);
-            
-            if($key)
+            // echo "key="; echo $key;
+            if($key === 0 || $key > 0)
             {
+                // echo "In if=<pre>"; print_r($array);
                 unset($array[$key]);
+                // echo "<pre>"; print_r($array);
                 $array=array_values($array);
+                // echo "<pre>"; print_r($array); 
                 $array=json_encode($array);
-                
+                // echo  $array;
+                // break;
                 $update=Sorting::find($sorting->id);
                 $update->sorting=$array;
                 $update->save();
