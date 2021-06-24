@@ -13,5 +13,9 @@ class TaskManagerServiceProvider extends ServiceProvider
     {
         $this->loadMigrationsFrom(__DIR__ .'/../database/migrations');
         $this->loadRoutesFrom(__DIR__.'/../routes/web.php');
+        
+        $this->publishes([
+            __DIR__.'/../database/seeders/SortingTableSeeder.php' => database_path('seeders/SortingTableSeeder.php')
+        ], 'sorting-seeder');
     }
 }
